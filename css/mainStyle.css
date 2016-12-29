@@ -1,0 +1,204 @@
+/**
+ * Created by think on 2016/12/29
+ * auth:Super T HH.
+ */
+*{
+    padding: 0px;
+    margin: 0px;
+    /*
+     * 禁止选中文字
+     */
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+}
+
+.drawarea{
+    position: absolute;
+    height: 100%;
+    left: 200px;
+    top: 0px;
+    width: 100%;
+}
+
+.drawtools{
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+    border-right: 1px solid #00AAFF;
+}
+
+.square{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgb(255,128,0);
+    border: 1px solid #000;
+}
+
+.round{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgb(255,128,0);
+    border: 1px solid #000;
+}
+
+.parallelogram{
+    width: 60px;
+    height: 60px;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+    background: rgb(255,128,0);
+    position: absolute;
+    border: 1px solid #000;
+}
+
+.diamond{
+    width: 50px;
+    height: 50px;
+    background: rgb(255,128,0);
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px solid #000;
+}
+
+.ellipse{
+    height: 50px;
+    width: 85px;
+    background: rgb(255,128,0);
+    position: absolute;
+    border-radius: 45%;
+    border: 1px solid #000;
+}
+
+.cylindrical{
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+    background:rgb(255,128,0);
+}
+
+.cylindricalround{
+    border-radius: 50%;
+    height: 20px;
+    width: 40px;
+    border: 1px solid #000;
+    margin-top: -10px;
+    margin-left: -1px;
+    background:rgb(255,128,0);
+}
+
+.cylindricalroundbottom{
+    border-radius: 50%;
+    height: 20px;
+    width: 40px;
+    border: 1px solid #000;
+    margin-top: 36px;
+    margin-left: 0px;
+    background:rgb(255,128,0);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.hexagon{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+}
+
+.hexagonleft{
+    width: 0px;
+    border-right: 20px solid rgb(255,128,0);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.hexagonmiddle{
+    width: 40px;
+    height: 40px;
+    background: rgb(255,128,0);
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+.hexagonright{
+    width: 0px;
+    border-left: 20px solid rgb(255,128,0);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-top: -40px;
+    margin-left: 60px;
+}
+
+.datestore{
+    height: 50px;
+    width: 70px;
+    background: rgb(255,128,0);
+    position: absolute;
+}
+
+.datestoreleft{
+    height: 50px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background: rgb(255,128,0);
+    margin-left: -13px;
+}
+
+.datestoreright{
+    height: 50px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background: #fff;
+    margin-left: 52px;
+    margin-top: -50px;
+}
+
+.allarrow{width:60px; height:100px;position: absolute;}
+.arrow {width: 20px;height: 20px;position: relative;  display: inline-block; margin: 10px 10px;}
+.arrow:before, .arrow:after {content: '';border-color: transparent; border-style: solid; position: absolute;}
+.arrow-up:before { border: none;background-color: rgb(255,128,0); height: 300%;width: 30%; top: 150%; left: 80%;}
+.arrow-up:after {left: 0;top: -50%;border-width: 20px 20px 20px 20px ;  border-color:transparent transparent rgb(255,128,0) transparent;}
+
+.arrowbottom{width:60px; height:100px;position: absolute;-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);}
+
+.arrowleft{width:60px; height:100px;position: absolute;-webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);}
+
+.arrowright{width:60px; height:100px;position: absolute;margin-top: 2px;-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);}
